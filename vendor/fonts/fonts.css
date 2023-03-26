@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'SourceSansPro-Bold';
+  font-family: 'SourceSansPro';
   font-style:  bold;
   font-weight: 900;
   font-display: swap;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Regular';
+  font-family: 'SourceSansPro';
   font-style:  normal;
   font-weight: 400;
   font-display: swap;

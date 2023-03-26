@@ -1,0 +1,41 @@
+.page {
+    background-color: #E6E6E6;
+    width: 100%;
+    font-family: SourceSansPro, Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
+    background-image: url(./images/Napalkov.svg) no-repeat;
+}
+
+.txt {
+    color: #111;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.header__nav {
+    
+}
+
+.header__menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.header__link {
+    font-size: 0.8rem;
+    margin-right: 3rem;
+}
+
+
+.profile__main-pic {
+    max-width: 90vh;
+}
