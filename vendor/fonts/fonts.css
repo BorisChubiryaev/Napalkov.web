@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  font-style:  bold;
+  font-weight: 900;
+  font-display: swap;
+  src: url('SourceSansPro-Bold.woff2') format('woff2'),
+       url('SourceSansPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('SourceSansPro-Regular.woff2') format('woff2'),
+       url('SourceSansPro-Regular.woff') format('woff');
+}
