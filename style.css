@@ -16,7 +16,7 @@
 .header {
     position: absolute;
     right: 10%;
-    top: 10%;
+    top: 8%;
 }
 
 .header__nav {
@@ -31,11 +31,53 @@
 }
 
 .header__link {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     margin-right: 3rem;
 }
 
 
 .profile__main-pic {
     max-width: 90vh;
+}
+
+.profile__info {
+    position: absolute;
+    right: 12%;
+    top: 30%;
+    text-align: center;
+}
+
+.profile__name {
+    font-size: calc( (800vw)/(1280) * (24 - 16) + 16px);
+    font-weight: 400;
+    margin-bottom: auto;
+}
+
+.profile__sub-name {
+    color: #AE0000;
+    font-weight: 700;
+    font-size: calc( (300vw)/(1280) * (24 - 16) + 16px);
+}
+
+.profile__add-button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 58px;
+    width: 285px;
+    letter-spacing: 2px;
+}
+
+.footer {
+    position: absolute;
+    right: 45%;
+    bottom: 2%;
+}
+
+.footer__copyright {
+    color: #b2b2b2;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.6rem;
 }
