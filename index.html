@@ -26,7 +26,7 @@
                         <a class="header__link link txt" href="#">Главная</a>
                     </li>
                     <li>
-                        <a class="header__link link txt" href="#">Отзывы</a>
+                        <a class="header__link rewiew link txt" >Отзывы</a>
                     </li>
                     <li>
                         <a class="header__link link txt" href="#">Контакты</a>
@@ -50,8 +50,21 @@
             <a class="footer__copyright" href="#">web by oldnewborispro</a>
         </footer>
 
+        <div class="popup">
+            <div class="popup__container">
+                <form class="popup__form">
+                    <h3 class="popup__title">Редактировать профиль</h3>
+                    <input class="popup__input popup__input-name" placeholder="Введите имя" value="Жак-Ив Кусто" required>
+                    <input class="popup__input popup__input-about" placeholder="О себе" value="Исследователь океана" required>
+                    <button class="button popup__save" type="submit">Сохранить</button>
+                    <button class="button popup__close" type="button"></button>
+                </form>
+            </div>
+        </div>
+
 
     <!-- <script type="module" src="./scripts/script.js"></script> -->
+    <script src="./scripts/Popup.js"></script>
 
 </body>
 </html>
