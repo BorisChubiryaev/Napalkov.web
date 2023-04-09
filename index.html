@@ -49,14 +49,17 @@
         <footer class="footer">
             <a class="footer__copyright" href="#">web by oldnewborispro</a>
         </footer>
-
-        <div class="popup">
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <div class="popup slider">
             <button class="button popup__close" type="button"></button>
             <div class="popup__container">
-                <form class="popup__form">
-                    <div id="plus" onclick="plus()">вперед</div>
-                    <div class="container ff">
-                        <div class="card hg">
+                <form class="popup__form slider">
+                    <div class="slider-control">
+                        <div id="sl-prev" class="sl-btn">назад</div>
+                        <div id="sl-next" class="sl-btn">вперед</div>      
+                      </div>
+                    <div class="container slider-win">
+                        <div class="card slider-item">
                             <div class="face face1" style="background-image: url(./images/фото\ петровых.jpg); background-size: cover; background-position: center;">
                                 <div class="content">
                                     <h3>Свадьба Петровых 18.01.2022</h3>
@@ -69,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card hg">
+                        <div class="card slider-item">
                             <div class="face face1" style="background-image: url(./images/Юбилей_Максимова.jpg); background-size: cover; background-position: center;">
                                 <div class="content">
                                     <h3>Юбилей Максимова И.В. 20.12.2023</h3>
@@ -82,7 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card hg">
+                        <div class="card slider-item">
                             <div class="face face1" style="background-image: url(./images/tTC_opening.jpeg); background-size: cover; background-position: center;">
                                 <div class="content">
                                     <h3>Открытие ТЦ Океанис</h3>
@@ -99,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card hg">
+                        <div class="card slider-item">
                             <div class="face face1" style="background-image: url(./images/tTC_opening.jpeg); background-size: cover; background-position: center;">
                                 <div class="content">
                                     <h3>Открытие ТЦ Океанис</h3>
@@ -116,7 +119,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card hg">
+                        <div class="card slider-item">
                             <div class="face face1" style="background-image: url(./images/tTC_opening.jpeg); background-size: cover; background-position: center;">
                                 <div class="content">
                                     <h3>Открытие ТЦ Океанис</h3>
