@@ -1,8 +1,6 @@
 const popup = document.querySelector('.popup');
 const openPopup = document.querySelector('.rewiew');
 const closePopup = popup.querySelector('.popup__close');
-// const toRight = document.querySelector('.rigtBtn')
-// let container = document.querySelector('.container')
 
 
 const onPopup = function() {
