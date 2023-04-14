@@ -97,9 +97,36 @@
     letter-spacing: 2px;
 }
 
+.moveBtn {
+    height: 13vh;
+    width: 13vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: #08080840;
+    border-radius: 50vw;
+}
 
+.moveBtn:hover {
+    background-color: #0808089a;
+    transition: .2s ease-in-out;
+}
 
-.popup {
+.moveBtn:active {
+    background-color: #fa00009a;
+    transition: .2s ease-in-out;
+}
+
+.right {
+    top: 45%;
+    right: 8vw;
+}
+
+.left {
+    top: 45%;
+    left: 8vw; 
+}
+
+.popup, .popupCont {
     background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
@@ -111,6 +138,8 @@
     display: none;
 }
 
+
+
 .popup_opened {
     display: flex;
 }
@@ -118,7 +147,7 @@
 .popup__form {
     display: flex;
     flex-direction: column;
-    max-width: 430px;
+    min-width: 70vw;
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
@@ -126,7 +155,12 @@
     position: relative;
     padding: 34px 36px 36px;
     box-sizing: border-box;
+    overflow: auto;
 }
+
+.popup__form::-webkit-scrollbar {
+    display: none;
+  }
 
 .popup__title {
     font-weight: 900;
@@ -136,4 +170,126 @@
     margin: 0;
     max-width: 330px;
     padding-bottom: 54px;
+}
+
+.popup__close {
+    border: none;
+    background-image: url('../Napalkov.web/images/buttons/CloseIcon.svg');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: opacity .7s ease;
+    position: absolute;
+}
+
+.container{
+    width: 125%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.container .card .face{
+    width: 60vh;
+    height: 40vh;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(20vh);
+
+}
+
+.container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 3.5vh;
+    background-color: #00000042;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-20vh);
+    border-radius: 0 0 10px 10px;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 2.5vh;
+    padding: 2vh 0;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.content__text {
+    margin-bottom: 50px;
+    font-size: 2.5vh;
+}
+
+.content__button {
+
 }
