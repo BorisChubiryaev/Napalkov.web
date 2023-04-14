@@ -126,7 +126,7 @@
     left: 8vw; 
 }
 
-.popup {
+.popup, .popupCont {
     background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
@@ -137,6 +137,8 @@
     height: 100%;
     display: none;
 }
+
+
 
 .popup_opened {
     display: flex;

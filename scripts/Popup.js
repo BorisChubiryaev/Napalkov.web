@@ -1,18 +1,30 @@
 const popup = document.querySelector('.popup');
-const openPopup = document.querySelector('.rewiew');
-const closePopup = popup.querySelector('.popup__close');
+const popupCont = document.querySelector('.popupCont');
+const openPopupRew = document.querySelector('.rewiew');
+const openPopupCont = document.querySelector('.contacts');
+const closePopup = document.querySelector('.popup__close');
+const clscont = document.querySelector('.clscont');
 
 
 const onPopup = function() {
     popup.classList.toggle('popup_opened');
 };
-
 const offPopup = function() {
     popup.classList.remove('popup_opened');
 }
 
-openPopup.addEventListener('click', onPopup);
+const onPopupCont = function() {
+  popupCont.classList.toggle('popup_opened');
+};
+const offPopupCont = function() {
+  popupCont.classList.remove('popup_opened');
+}
+
+
+openPopupRew.addEventListener('click', onPopup);
+openPopupCont.addEventListener('click', onPopupCont);
 closePopup.addEventListener('click', offPopup);
+clscont.addEventListener('click', offPopupCont);
 
 var totalWidth = 0;
 
