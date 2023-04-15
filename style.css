@@ -148,7 +148,6 @@
     display: flex;
     flex-direction: column;
     min-width: 70vw;
-    width: 100%;
     background-color: #fff;
     border-radius: 10px;
     margin: 0 auto;
@@ -292,4 +291,60 @@
 
 .content__button {
 
+}
+
+.popupCont__zone {
+    display: flex;
+    flex-direction: column;
+}
+
+.popupCont__icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.popupCont__icon {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.popupCont__icon:last-child {
+    margin-right: 0;
+}
+
+.popupCont__phone {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.number {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    width: auto;
+    height: auto;
+}
+
+.tg {
+    background-image: url(./images/buttons/Telegram_black.svg);
+}
+
+.inst {
+    background-image: url(./images/buttons/Instagram_black.svg);
+}
+
+.tik {
+    background-image: url(./images/buttons/TikTok_black.svg);
+}
+
+.vk {
+    background-image: url(./images/buttons/VK_black.svg);
+}
+
+.what {
+    background-image: url(./images/buttons/WhatsApp_black.svg);
 }
