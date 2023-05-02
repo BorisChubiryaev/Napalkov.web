@@ -39,6 +39,7 @@
 .header__link:hover {
     text-decoration: underline 3px solid #AE0000;
     text-underline-offset: 10px;
+    transition: all 0.1s cubic-bezier(0.7, 1.01, 0.34, -0.39);
 }
 
 
