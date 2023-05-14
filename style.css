@@ -1,10 +1,11 @@
+html {
+    background-color: #E6E6E6;
+}
+
 .page {
     background-color: #E6E6E6;
     width: 100%;
     font-family: SourceSansPro, Arial, Helvetica, sans-serif;
-    max-height: 100vh;
-    overflow: hidden;
-    background-image: url(./images/Napalkov.svg) no-repeat;
 }
 
 .txt {
@@ -15,8 +16,20 @@
 
 .header {
     position: absolute;
-    right: 10%;
+    right: 12%;
     top: 8%;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+      position: relative;
+      right: 0;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: max-content;
+    }
 }
 
 .header__nav {
@@ -31,9 +44,17 @@
 }
 
 .header__link {
-    font-size: 1.2rem;
-    margin-right: 3rem;
+    font-size: calc( (800vw)/(1280) * (.7) + 16px);
+    margin-right: calc( (800vw)/(1280) * (2) + 16px);
     cursor: pointer;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.lt {
+    margin-right: 0;
 }
 
 .header__link:hover {
@@ -42,9 +63,12 @@
     transition: all 0.1s cubic-bezier(0.7, 1.01, 0.34, -0.39);
 }
 
-
 .profile__main-pic {
-    max-width: 90vh;
+    max-width: calc(80vh + 132px);
+    position: absolute;
+    bottom: 0px;
+    left: -13px;
+    z-index: -1000;
 }
 
 .profile__info {
@@ -52,6 +76,16 @@
     right: 12%;
     top: 30%;
     text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile__info {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 10%;
+        text-align: center;
+    }
 }
 
 .profile__name {
